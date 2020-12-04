@@ -1,0 +1,5 @@
+(load-theme 'zenburn t)
+(setq zenburn-use-variable-pitch t)
+(setq zenburn-scale-org-headlines t)
+(setq zenburn-scale-outline-headlines t)
+(toggle-frame-maximized)

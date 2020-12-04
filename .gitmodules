@@ -11,3 +11,12 @@
 [submodule "epkg"]
 	path = lib/epkg
 	url = git@github.com:emacscollective/epkg.git
+[submodule "helm"]
+	path = lib/helm
+	url = git@github.com:emacs-helm/helm.git
+[submodule "use-package"]
+	path = lib/use-package
+	url = git@github.com:jwiegley/use-package.git
+[submodule "zenburn-theme"]
+	path = lib/zenburn-theme
+	url = git@github.com:bbatsov/zenburn-emacs.git
