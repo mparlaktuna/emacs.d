@@ -3,3 +3,6 @@
 (setq zenburn-scale-org-headlines t)
 (setq zenburn-scale-outline-headlines t)
 (toggle-frame-maximized)
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(toggle-scroll-bar -1)
