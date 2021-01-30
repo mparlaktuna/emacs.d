@@ -8,8 +8,3 @@
   (company-show-numbers t)
   (company-tooltip-align-annotations 't)
   (global-company-mode t))
-
-(use-package company-box
-  :after company
-  :diminish
-  :hook (company-mode . company-box-mode))
