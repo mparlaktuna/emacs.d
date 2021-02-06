@@ -21,3 +21,7 @@
 (define-key company-active-map (kbd "\C-p") 'company-select-previous)
 (define-key company-active-map (kbd "\C-d") 'company-show-doc-buffer)
 (define-key company-active-map (kbd "M-.") 'company-show-location)
+
+
+(require 'yasnippet)
+(yas-global-mode 1)
