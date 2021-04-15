@@ -8,8 +8,11 @@
 (load "helm_conf.el")
 (load "completion.el")
 (load "lisp_config.el")
+;; (load "exwm_config.el")
 ;; (load-file ".emacs.d/completion.el")
+(set-face-attribute 'default nil :height 100)
 
+(setq tramp-verbose 10)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -17,7 +20,14 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (yasnippet-snippets yasnippet-classic-snippets yasnippet helm-slime slime-company slime-theme company magit use-package helm boon zenburn-theme))))
+    (cmake-mode cmake-ide helm-sly sly-asdf sly-hello-world sly-macrostep sly-named-readtables sly-quicklisp sly-repl-ansi-color sly yasnippet-snippets yasnippet-classic-snippets yasnippet company magit use-package helm boon zenburn-theme)))
+ '(safe-local-variable-values
+   (quote
+    ((Lowercase . Yes)
+     (Base . 10)
+     (Syntax . ANSI-Common-Lisp)
+     (Package . CLIM-DEMO)
+     (indent-tabs)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
