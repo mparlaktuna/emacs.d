@@ -9,16 +9,10 @@
   (company-tooltip-align-annotations 't)
   (global-company-mode t))
 
-;; (slime-setup '(slime-fancy slime-company))
-
-;; (use-package slime-company
-;;   :after (slime company)
-;;   :config (setq slime-company-completion 'fuzzy
-;;                 slime-company-after-completion 'slime-company-just-one-space))
-(with-eval-after-load 'company
-  (define-key company-active-map (kbd "<return>") nil)
-  (define-key company-active-map (kbd "RET") nil)
-  (define-key company-active-map (kbd "C-SPC") #'company-complete-selection))
+;; (with-eval-after-load 'company
+;;   (define-key company-active-map (kbd "<return>") nil)
+;;   (define-key company-active-map (kbd "RET") nil)
+;;   (define-key company-active-map (kbd "C-SPC") #'company-complete-selection))
 
 (define-key company-active-map (kbd "\C-n") 'company-select-next)
 (define-key company-active-map (kbd "\C-p") 'company-select-previous)

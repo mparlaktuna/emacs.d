@@ -6,3 +6,7 @@ recentf
 /transient
 /auto-save-list
 /common-lisp-snippets
+session*
+url/*
+eshell/*
+network-security.data

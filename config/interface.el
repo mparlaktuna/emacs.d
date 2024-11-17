@@ -6,8 +6,8 @@
 (define-key boon-command-map "T" 'run-in-vterm)
 (define-key boon-command-map "U" 'ace-window)
 
-;; (add-hook 'slime-repl-mode-hook 'turn-off-boon-mode)
-;; (add-hook 'sldb-hook 'turn-off-boon-mode)
+(add-hook 'slime-repl-mode-hook 'turn-off-boon-mode)
+(add-hook 'sldb-hook 'turn-off-boon-mode)
 (add-hook 'sly-db-hook 'turn-off-boon-mode)
 (add-hook 'sly-mrepl-hook 'turn-off-boon-mode)
 (global-set-key (kbd "<RET>") 'newline-and-indent)
