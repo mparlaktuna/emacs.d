@@ -1,9 +1,3 @@
-(load-theme 'zenburn t)
-(setq zenburn-use-variable-pitch t)
-(setq zenburn-scale-org-headlines t)
-(setq zenburn-scale-outline-headlines t)
-(toggle-frame-maximized)
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(toggle-scroll-bar -1)
-(setq make-backup-files nil)
+(use-package zenburn-theme
+  :config
+  (load-theme 'zenburn t))
