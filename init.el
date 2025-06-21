@@ -1,3 +1,8 @@
+'(package-archives
+   '(("gnu" . "https://elpa.gnu.org/packages/")
+     ("nongnu" . "https://elpa.nongnu.org/nongnu/")
+     ("melpa" . "https://melpa.org/packages/")))
+
 (defvar bootstrap-version)
 (let ((bootstrap-file
        (expand-file-name
@@ -16,10 +21,27 @@
 
 (setq package-enable-at-startup nil)
 (straight-use-package 'zenburn-theme)
+;; (straight-use-package
+;;  '(emacs-bazel-mode
+;;    :type git
+;;    :host github
+;;    :repo "bazelbuild/emacs-bazel-mode/bazel.el"))
+
 (straight-use-package 'use-package)
 
 (load-file "~/.emacs.d/config/theme.el")
+(load-file "~/.emacs.d/config/bazel.el")
 (load-file "~/.emacs.d/config/interface.el")
+(load-file "~/.emacs.d/config/helm_conf.el")
 
 (use-package magit
   :straight t)
+
+(setq-default dired-listing-switches "-alh")
+
+;; (use-package bazel
+;;   :straight t
+;;   :config
+;;   (load-file "bazel.el"))
+(put 'dired-find-alternate-file 'disabled nil)
+(yas-global-mode)
